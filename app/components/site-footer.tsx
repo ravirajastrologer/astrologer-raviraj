@@ -33,9 +33,6 @@ export function SiteFooter() {
           <a href={phoneHref} className="footer-link">
             {phoneNumber}
           </a>
-          <a href={whatsappHref} className="footer-link">
-            WhatsApp
-          </a>
         </div>
       </div>
     </footer>
