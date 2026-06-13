@@ -1,0 +1,29 @@
+<svg width="640" height="180" viewBox="0 0 640 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="640" height="180" fill="transparent"/>
+  <g transform="translate(18 18)">
+    <circle cx="72" cy="72" r="68" stroke="#F4E7D1" stroke-width="3"/>
+    <circle cx="72" cy="72" r="54" stroke="#F4E7D1" stroke-width="2" opacity="0.9"/>
+    <circle cx="72" cy="72" r="18" stroke="#F4E7D1" stroke-width="2"/>
+    <circle cx="72" cy="72" r="5" fill="#F4E7D1"/>
+    <path d="M72 22L78 58L112 48L86 72L112 96L78 86L72 122L66 86L32 96L58 72L32 48L66 58L72 22Z" stroke="#F4E7D1" stroke-width="2.4" stroke-linejoin="round"/>
+    <path d="M72 4V22M72 122V140M4 72H22M122 72H140M24 24L36 36M108 108L120 120M24 120L36 108M108 36L120 24" stroke="#F4E7D1" stroke-width="2" opacity="0.9"/>
+    <g fill="#F4E7D1" font-family="Georgia, 'Times New Roman', serif" font-size="11" text-anchor="middle">
+      <text x="72" y="16">♈</text>
+      <text x="100" y="24">♉</text>
+      <text x="120" y="44">♊</text>
+      <text x="128" y="74">♋</text>
+      <text x="120" y="104">♌</text>
+      <text x="100" y="124">♍</text>
+      <text x="72" y="132">♎</text>
+      <text x="44" y="124">♏</text>
+      <text x="24" y="104">♐</text>
+      <text x="16" y="74">♑</text>
+      <text x="24" y="44">♒</text>
+      <text x="44" y="24">♓</text>
+    </g>
+  </g>
+  <g fill="#F4E7D1">
+    <text x="186" y="84" font-family="Cinzel, Georgia, serif" font-size="54" letter-spacing="1.2">ASTROLOGER</text>
+    <text x="270" y="128" font-family="Manrope, Arial, sans-serif" font-size="24" letter-spacing="12">RAVIRAJ</text>
+  </g>
+</svg>
