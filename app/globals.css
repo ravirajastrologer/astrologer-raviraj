@@ -993,6 +993,7 @@ textarea {
   .hero-grid {
     gap: 2.5rem;
     padding-block: 4rem 3rem;
+    align-items: start;
   }
 
   .hero-title {
@@ -1025,13 +1026,15 @@ textarea {
 
   .hero-visual {
     min-height: auto;
+    display: grid;
+    gap: 1rem;
   }
 
   .hero-floating-card {
     position: relative;
     inset: auto;
     max-width: none;
-    margin-top: 1rem;
+    margin-top: 0;
   }
 
   .page-hero-grid {
@@ -1211,6 +1214,14 @@ textarea {
   .hero-grid {
     gap: 2rem;
     padding-block: 3rem 2.25rem;
+  }
+
+  .hero-copy-block {
+    order: 1;
+  }
+
+  .hero-visual {
+    order: 2;
   }
 
   .hero-title-home,

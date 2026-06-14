@@ -38,7 +38,7 @@ export default function Home() {
     <>
       <section className="hero-section">
         <div className="shell hero-grid">
-          <ScrollReveal className="hero-copy-block">
+          <div className="hero-copy-block">
             <p className="eyebrow">Professional Vedic Guidance</p>
             <h1 className="hero-title hero-title-home">
               Raviraj Gaur
@@ -66,34 +66,32 @@ export default function Home() {
                 </div>
               ))}
             </div>
-          </ScrollReveal>
+          </div>
 
-          <ScrollReveal delay={160}>
-            <div className="hero-visual">
-              <ScrollParallax className="hero-image-shell" speed={-0.05}>
-                <div className="hero-image-frame">
-                  <Image
-                    src="/hero-home-object-ai.png"
-                    alt="Luxury face-free astrology still life with kundli chart, brass lamp, and sacred consultation objects"
-                    width={1200}
-                    height={1400}
-                    priority
-                    className="hero-image"
-                  />
-                </div>
-              </ScrollParallax>
+          <div className="hero-visual">
+            <ScrollParallax className="hero-image-shell" speed={-0.05}>
+              <div className="hero-image-frame">
+                <Image
+                  src="/hero-home-object-ai.png"
+                  alt="Luxury face-free astrology still life with kundli chart, brass lamp, and sacred consultation objects"
+                  width={1200}
+                  height={1400}
+                  priority
+                  className="hero-image"
+                />
+              </div>
+            </ScrollParallax>
 
-              <ScrollParallax className="hero-floating-card hero-floating-card-one" speed={0.11}>
-                <span className="hero-floating-number">08+</span>
-                <p>Specialized consultation categories presented clearly.</p>
-              </ScrollParallax>
+            <ScrollParallax className="hero-floating-card hero-floating-card-one" speed={0.11}>
+              <span className="hero-floating-number">08+</span>
+              <p>Specialized consultation categories presented clearly.</p>
+            </ScrollParallax>
 
-              <ScrollParallax className="hero-floating-card hero-floating-card-two" speed={0.08}>
-                <span className="hero-floating-number">24/7</span>
-                <p>Fast inquiry flow through WhatsApp and direct contact.</p>
-              </ScrollParallax>
-            </div>
-          </ScrollReveal>
+            <ScrollParallax className="hero-floating-card hero-floating-card-two" speed={0.08}>
+              <span className="hero-floating-number">24/7</span>
+              <p>Fast inquiry flow through WhatsApp and direct contact.</p>
+            </ScrollParallax>
+          </div>
         </div>
       </section>
 
