@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { domainName, navLinks, phoneHref, phoneNumber, siteName, whatsappHref } from "@/app/site-data";
+import { domainName, navLinks, phoneHref, phoneNumber, siteName } from "@/app/site-data";
 
 export function SiteFooter() {
   return (

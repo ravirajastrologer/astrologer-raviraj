@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 import {
-  domainName,
   phoneNumber,
+  primaryDomain,
   siteDescription,
   siteName,
   siteTitle,
   whatsappHref,
 } from "@/app/site-data";
 
-export const siteUrl = `https://${domainName}`;
+export const siteUrl = `https://${primaryDomain}`;
 
 export const defaultKeywords = [
   "Vedic Astrologer",

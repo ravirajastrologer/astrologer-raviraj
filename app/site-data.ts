@@ -6,6 +6,7 @@ export const phoneNumber = "+919672490591";
 export const phoneHref = "tel:+919672490591";
 export const whatsappHref = "https://wa.me/919672490591";
 export const domainName = "astroraviraj.com";
+export const primaryDomain = "www.astroraviraj.com";
 
 export const navLinks = [
   { href: "/", label: "Home" },
