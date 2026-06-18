@@ -1,12 +1,13 @@
 export const siteName = "Raviraj Gaur";
-export const siteTitle = "Raviraj Gaur Vedic Astrologer & Spiritual Consultant";
+export const siteTitle = "Raviraj Gaur | Vedic Astrologer, Raviraj Astro & Spiritual Consultant";
 export const siteDescription =
-  "Personalized Vedic astrology guidance for love, marriage, career, family concerns, and spiritual remedies.";
+  "Raviraj Gaur, also searched as Raviraj Astro and Raviraj astrologer, offers personalized Vedic astrology guidance for love, marriage, career, family concerns, horoscope reading, and spiritual remedies.";
 export const phoneNumber = "+919672490591";
 export const phoneHref = "tel:+919672490591";
 export const whatsappHref = "https://wa.me/919672490591";
 export const domainName = "astroraviraj.com";
 export const primaryDomain = "www.astroraviraj.com";
+export const brandAliases = ["Raviraj Astro", "Raviraj Astrologer", "Astrologer Raviraj"];
 
 export const navLinks = [
   { href: "/", label: "Home" },
@@ -17,6 +18,7 @@ export const navLinks = [
 ];
 
 export const heroHighlights = [
+  "Raviraj Astro Guidance",
   "Love & Relationship Guidance",
   "Marriage Consultation",
   "Career & Business Astrology",
@@ -79,6 +81,7 @@ export const services = [
 
 export const trustPoints = [
   "Personalized one-to-one consultation approach",
+  "Raviraj Astro guidance rooted in traditional Vedic principles",
   "Vedic astrology guidance for clients worldwide",
   "Mobile-friendly booking and WhatsApp follow-up",
   "Clear recommendations focused on real-life decisions",
@@ -158,6 +161,16 @@ export const blogPosts = [
 ];
 
 export const faqs = [
+  {
+    question: "Who is Raviraj Astro?",
+    answer:
+      "Raviraj Astro refers to Raviraj Gaur, a Vedic astrologer and spiritual consultant offering personalized guidance for love, marriage, career, family matters, and spiritual remedies.",
+  },
+  {
+    question: "Can I book an online consultation with Raviraj Gaur from anywhere?",
+    answer:
+      "Yes. Online astrology consultation is available for clients across India and worldwide through WhatsApp and direct contact support.",
+  },
   {
     question: "How do I book a consultation?",
     answer:

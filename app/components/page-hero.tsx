@@ -61,7 +61,7 @@ export function PageHero({
           </div>
           <div className="page-hero-note">
             <span className="page-hero-note__label">{eyebrow}</span>
-            <p>Refined, mobile-friendly consultation flow with a premium visual presence.</p>
+            <p>Online Vedic astrology consultation with simple WhatsApp contact and clear personal guidance.</p>
           </div>
         </div>
       </div>

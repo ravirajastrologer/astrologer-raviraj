@@ -5,12 +5,14 @@ import { buildPageMetadata } from "@/app/seo";
 import { phoneHref, phoneNumber, whatsappHref } from "@/app/site-data";
 
 export const metadata = buildPageMetadata({
-  title: "Contact For Online Astrology Consultation",
+  title: "Contact Raviraj Astro For Online Astrology Consultation",
   description:
-    "Book an online astrology consultation with Raviraj Gaur for love astrology, marriage astrology, horoscope reading, relationship guidance, and birth chart support.",
+    "Contact Raviraj Gaur, also searched as Raviraj Astro, for online astrology consultation, love astrology, marriage astrology, horoscope reading, relationship guidance, and birth chart support.",
   path: "/contact",
   image: "/hero-contact-ai.png",
   keywords: [
+    "Contact Raviraj Astro",
+    "Raviraj Astrologer Contact",
     "Online Astrology Consultation",
     "Astrology Consultation Online",
     "Love Astrology",

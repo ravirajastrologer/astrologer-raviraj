@@ -1,15 +1,17 @@
 import { PageHero } from "@/app/components/page-hero";
 import { ScrollReveal } from "@/app/components/scroll-reveal";
-import { buildPageMetadata } from "@/app/seo";
+import { buildPageMetadata, getFaqSchema } from "@/app/seo";
 import { faqs } from "@/app/site-data";
 
 export const metadata = buildPageMetadata({
-  title: "Astrology Consultation FAQ",
+  title: "Raviraj Astro FAQ | Online Astrology Consultation Questions",
   description:
-    "Find answers about online astrology consultation, WhatsApp booking, horoscope reading, relationship guidance, and how Raviraj Gaur works with clients worldwide.",
+    "Find answers about Raviraj Astro online astrology consultation, WhatsApp booking, horoscope reading, relationship guidance, and how Raviraj Gaur works with clients worldwide.",
   path: "/faq",
   image: "/hero-faq-ai.png",
   keywords: [
+    "Raviraj Astro FAQ",
+    "Raviraj Astrologer FAQ",
     "Online Astrology Consultation",
     "Horoscope Reading",
     "Relationship Guidance",
@@ -19,8 +21,14 @@ export const metadata = buildPageMetadata({
 });
 
 export default function FaqPage() {
+  const faqSchema = getFaqSchema(faqs);
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <PageHero
         eyebrow="FAQ"
         title="Answers that make booking and consultation expectations clearer."

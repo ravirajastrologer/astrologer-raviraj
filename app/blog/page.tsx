@@ -4,12 +4,14 @@ import { buildPageMetadata } from "@/app/seo";
 import { blogPosts } from "@/app/site-data";
 
 export const metadata = buildPageMetadata({
-  title: "Astrology Blog, Horoscope Reading & Relationship Guidance",
+  title: "Raviraj Astro Blog | Horoscope Reading & Relationship Guidance",
   description:
-    "Read astrology articles on horoscope reading, career astrology, relationship guidance, spiritual remedies, and online astrology consultation insights.",
+    "Read Raviraj Astro articles on horoscope reading, career astrology, relationship guidance, spiritual remedies, and online astrology consultation insights.",
   path: "/blog",
   image: "/hero-blog-ai.png",
   keywords: [
+    "Raviraj Astro Blog",
+    "Raviraj Astrologer Articles",
     "Horoscope Reading",
     "Relationship Guidance",
     "Online Astrology Consultation",

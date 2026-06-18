@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import {
+  brandAliases,
   phoneNumber,
   primaryDomain,
   siteDescription,
@@ -11,6 +12,10 @@ import {
 export const siteUrl = `https://${primaryDomain}`;
 
 export const defaultKeywords = [
+  "Raviraj Astro",
+  "Raviraj Astrologer",
+  "Astrologer Raviraj",
+  "Raviraj Astro website",
   "Vedic Astrologer",
   "Online Astrology Consultation",
   "Love Astrology",
@@ -69,6 +74,7 @@ export function buildPageMetadata({
     alternates: {
       canonical,
     },
+    metadataBase: new URL(siteUrl),
     openGraph: {
       type: "website",
       url: canonical,
@@ -91,6 +97,9 @@ export function buildPageMetadata({
       description,
       images: [imageUrl],
     },
+    authors: [{ name: siteName, url: siteUrl }],
+    creator: siteName,
+    publisher: siteName,
     robots: {
       index: true,
       follow: true,
@@ -161,9 +170,12 @@ export function getOrganizationSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
+    "@id": `${siteUrl}/#organization`,
     name: siteTitle,
+    alternateName: brandAliases,
     description: siteDescription,
     url: siteUrl,
+    image: absoluteUrl("/hero-astrologer-ai.png"),
     telephone: phoneNumber,
     contactPoint: {
       "@type": "ContactPoint",
@@ -173,6 +185,17 @@ export function getOrganizationSchema() {
     },
     sameAs: [whatsappHref],
     areaServed: "Worldwide",
+    availableLanguage: ["English", "Hindi"],
+    knowsAbout: [
+      "Vedic Astrology",
+      "Love Astrology",
+      "Marriage Astrology",
+      "Horoscope Reading",
+      "Career Astrology",
+      "Business Astrology",
+      "Spiritual Remedies",
+      "Kundli Reading",
+    ],
     serviceType: [
       "Vedic Astrology Consultation",
       "Online Astrology Consultation",
@@ -184,16 +207,84 @@ export function getOrganizationSchema() {
   };
 }
 
+export function getPersonSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": `${siteUrl}/#person`,
+    name: siteName,
+    alternateName: brandAliases,
+    description: siteDescription,
+    url: siteUrl,
+    image: absoluteUrl("/hero-astrologer-ai.png"),
+    telephone: phoneNumber,
+    sameAs: [whatsappHref],
+    jobTitle: "Vedic Astrologer and Spiritual Consultant",
+    knowsAbout: [
+      "Vedic Astrology",
+      "Love Astrology",
+      "Marriage Astrology",
+      "Horoscope Reading",
+      "Birth Chart Reading",
+      "Career Astrology",
+      "Business Astrology",
+      "Spiritual Remedies",
+    ],
+    worksFor: {
+      "@id": `${siteUrl}/#organization`,
+    },
+  };
+}
+
 export function getWebsiteSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "WebSite",
+    "@id": `${siteUrl}/#website`,
     name: siteTitle,
+    alternateName: brandAliases,
     url: siteUrl,
     description: siteDescription,
     publisher: {
-      "@type": "Person",
-      name: siteName,
+      "@id": `${siteUrl}/#person`,
     },
+  };
+}
+
+export function getBreadcrumbSchema(
+  items: Array<{
+    name: string;
+    path: string;
+  }>,
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: items.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.name,
+      item: absoluteUrl(item.path),
+    })),
+  };
+}
+
+export function getFaqSchema(
+  items: Array<{
+    question: string;
+    answer: string;
+  }>,
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: items.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
   };
 }

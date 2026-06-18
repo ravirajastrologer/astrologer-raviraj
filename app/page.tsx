@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ScrollParallax } from "@/app/components/scroll-parallax";
 import { ScrollReveal } from "@/app/components/scroll-reveal";
-import { buildPageMetadata } from "@/app/seo";
+import { buildPageMetadata, getBreadcrumbSchema } from "@/app/seo";
 import {
   blogPosts,
   consultationSteps,
@@ -13,12 +13,15 @@ import {
 } from "@/app/site-data";
 
 export const metadata = buildPageMetadata({
-  title: "Vedic Astrologer & Online Astrology Consultation",
+  title: "Raviraj Astro | Vedic Astrologer, Horoscope Reading & Online Consultation",
   description:
-    "Consult Raviraj Gaur for online astrology consultation, love astrology, marriage astrology, horoscope reading, and birth chart guidance through Vedic astrology.",
+    "Raviraj Gaur, also known as Raviraj Astro and searched as Raviraj astrologer, offers online Vedic astrology consultation for love, marriage, career, horoscope reading, kundli analysis, and spiritual remedies.",
   path: "/",
   image: "/hero-astrologer-ai.png",
   keywords: [
+    "Raviraj Astro",
+    "Raviraj Astrologer",
+    "Astrologer Raviraj",
     "Vedic Astrologer",
     "Online Astrology Consultation",
     "Astrology Consultation Online",
@@ -33,9 +36,14 @@ export default function Home() {
   const featuredServices = services.slice(0, 4);
   const featuredPosts = blogPosts.slice(0, 2);
   const featuredHighlights = heroHighlights.slice(0, 3);
+  const breadcrumbSchema = getBreadcrumbSchema([{ name: "Home", path: "/" }]);
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <section className="hero-section">
         <div className="shell hero-grid">
           <div className="hero-copy-block">
@@ -46,8 +54,10 @@ export default function Home() {
               <span>& Spiritual Consultant</span>
             </h1>
             <p className="hero-copy">
-              Personalized guidance for love, marriage, career, family, and
-              spiritual clarity through traditional Vedic astrology.
+              Raviraj Gaur, also known to many visitors as Raviraj Astro,
+              provides personalized Vedic astrology guidance for love,
+              marriage, career, family concerns, horoscope reading, and
+              spiritual clarity.
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -98,37 +108,39 @@ export default function Home() {
       <section className="shell section-spacing">
         <ScrollReveal className="section-heading section-heading-compact">
           <p className="eyebrow">Why Choose Raviraj Gaur</p>
-          <h2>Calm guidance, premium presentation, and a smoother booking flow.</h2>
+          <h2>Trusted astrology guidance for love, marriage, career, and life clarity.</h2>
         </ScrollReveal>
 
         <div className="home-value-grid">
           <ScrollReveal delay={80} className="stat-grid">
             <div className="stat-card">
-              <strong>Premium Theme</strong>
-              <span>Dark blue and gold visual language with refined contrast.</span>
+              <strong>Personal Guidance</strong>
+              <span>Each consultation is focused on your unique question, timing, and situation.</span>
             </div>
             <div className="stat-card">
-              <strong>Mobile-First</strong>
-              <span>Quick actions and readable spacing built for smaller screens.</span>
+              <strong>Relationship Support</strong>
+              <span>Get insight for love, marriage, breakup concerns, and emotional confusion.</span>
             </div>
             <div className="stat-card">
-              <strong>WhatsApp Ready</strong>
-              <span>Simple contact path for faster inquiries and consultation requests.</span>
+              <strong>Career & Business Clarity</strong>
+              <span>Understand better timing, decisions, and next steps for work and growth.</span>
             </div>
             <div className="stat-card">
-              <strong>Trust Focused</strong>
-              <span>Clear information, direct contact paths, and a calm premium layout.</span>
+              <strong>Simple Booking</strong>
+              <span>Reach out quickly through WhatsApp or contact forms for easy consultation requests.</span>
             </div>
           </ScrollReveal>
 
           <ScrollReveal delay={180} className="feature-panel feature-panel-compact">
-            <p className="eyebrow">Traditional Insight</p>
+            <p className="eyebrow">Vedic Astrology Services</p>
             <h3 className="font-display text-3xl text-white">
-              Vedic astrology support for real-life decisions
+              Meaningful spiritual guidance for real-life problems
             </h3>
             <p className="text-white/72">
-              From love and marriage to career and family concerns, the site is
-              designed to feel trustworthy, focused, and easy to navigate.
+              If you are searching for Raviraj astrologer or astrologer
+              Raviraj, this platform brings together love astrology, marriage
+              guidance, career astrology, family problem support, horoscope
+              reading, and spiritual remedies in one trusted place.
             </p>
           </ScrollReveal>
         </div>
@@ -231,6 +243,29 @@ export default function Home() {
             Explore Blog Layout
           </Link>
         </div>
+      </section>
+
+      <section className="shell section-spacing">
+        <ScrollReveal className="feature-panel">
+          <p className="eyebrow">Online Vedic Astrologer</p>
+          <h2 className="font-display text-4xl text-white">
+            Raviraj Astro consultations for people seeking clarity and direction
+          </h2>
+          <div className="space-y-4 text-white/72">
+            <p>
+              People often search for Raviraj Astro, Raviraj astrologer, or
+              astrologer Raviraj when they need guidance for relationship
+              confusion, marriage timing, career decisions, business growth,
+              family concerns, or spiritual balance.
+            </p>
+            <p>
+              This website is built around those needs with service pages,
+              consultation information, and direct WhatsApp access so visitors
+              can quickly understand the guidance available and take the next
+              step with confidence.
+            </p>
+          </div>
+        </ScrollReveal>
       </section>
     </>
   );

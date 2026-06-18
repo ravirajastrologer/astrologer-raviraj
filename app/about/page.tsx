@@ -4,12 +4,14 @@ import { buildPageMetadata } from "@/app/seo";
 import { trustPoints, whatsappHref } from "@/app/site-data";
 
 export const metadata = buildPageMetadata({
-  title: "About Raviraj Gaur Vedic Astrologer",
+  title: "About Raviraj Astro | Raviraj Gaur Vedic Astrologer",
   description:
-    "Learn about Raviraj Gaur, a Vedic astrologer offering online astrology consultation, relationship guidance, horoscope reading, and spiritual support for clients worldwide.",
+    "Learn about Raviraj Gaur, also known as Raviraj Astro, a Vedic astrologer offering online astrology consultation, relationship guidance, horoscope reading, and spiritual support for clients worldwide.",
   path: "/about",
   image: "/hero-about-ai.png",
   keywords: [
+    "Raviraj Astro",
+    "Raviraj Astrologer",
     "Raviraj Gaur",
     "Vedic Astrologer",
     "Online Astrology Consultation",

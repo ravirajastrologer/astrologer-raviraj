@@ -5,12 +5,14 @@ import { buildPageMetadata } from "@/app/seo";
 import { services } from "@/app/site-data";
 
 export const metadata = buildPageMetadata({
-  title: "Love Astrology, Marriage Astrology & Horoscope Reading Services",
+  title: "Raviraj Astro Services | Love Astrology, Marriage Astrology & Horoscope Reading",
   description:
-    "Explore Vedic astrology services including love astrology, marriage astrology, horoscope reading, birth chart reading, career astrology, and spiritual remedies.",
+    "Explore Raviraj Astro services including love astrology, marriage astrology, horoscope reading, birth chart reading, career astrology, business astrology, and spiritual remedies.",
   path: "/services",
   image: "/hero-services-ai.png",
   keywords: [
+    "Raviraj Astro Services",
+    "Raviraj Astrologer",
     "Love Astrology",
     "Marriage Astrology",
     "Horoscope Reading",

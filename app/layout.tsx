@@ -4,7 +4,7 @@ import "./globals.css";
 import { SiteFooter } from "@/app/components/site-footer";
 import { SiteHeader } from "@/app/components/site-header";
 import { whatsappHref } from "@/app/site-data";
-import { getOrganizationSchema, getWebsiteSchema, rootMetadata } from "@/app/seo";
+import { getOrganizationSchema, getPersonSchema, getWebsiteSchema, rootMetadata } from "@/app/seo";
 
 const manrope = Manrope({
   variable: "--font-manrope",
@@ -25,6 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const organizationSchema = getOrganizationSchema();
+  const personSchema = getPersonSchema();
   const websiteSchema = getWebsiteSchema();
 
   return (
@@ -36,6 +37,10 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
         />
         <script
           type="application/ld+json"
